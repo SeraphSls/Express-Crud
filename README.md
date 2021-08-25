@@ -13,14 +13,12 @@ Para a importação do projeto, utilize um terminal de sua preferencia e o VsCod
 
 ```
 git clone 'url' 
-
 ```
 
 feito isso , navegue até o diretorio pelo terminal onde foi realizado o download do projeto, em seguida , digite o seguinte :
 
 ```
 code ..
-
 ```
 
 Esse comando vai abrir o VsCode já com a view do projeto
@@ -35,7 +33,6 @@ No terminal que será aberto , assumindo que já tenha o NodeJs instalado em sua
 
 ```
 npm install 
-
 ```
 
 Este comando vai baixar todas as dependencias necessarias mapeadas no package.json para a execução do projeto =)
@@ -61,7 +58,6 @@ Após estes passos realizados vá até o terminal aberto e digite o seguinte:
 
 ```
 npm start 
-
 ```
 
 e se tudo der certo , a aplicação vai estar hospedada em **localhost:5000/**
