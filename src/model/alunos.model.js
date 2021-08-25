@@ -10,7 +10,7 @@ var Aluno = function (aluno) {
 
 
 Aluno.create = function (novoAluno, result) {
-    dbConn.query("INSERT INTO alunos set ?", novoAluno, function (err, res) {
+    dbConn.query("INSERT INTO alunos SET first_name=?,last_name=?,email=?,phone=?", [novoAluno.first_name, novoAluno.last_name, novoAluno.email, novoAluno.phone], function (err, res) {
         if (err) {
             console.log("erro: ", err);
             result(err, null);

@@ -7,7 +7,7 @@ const dbConn = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'MySql2021!',
-  database : 'GECP'
+  database : 'programandoFuturo'
 });
 dbConn.connect(function(err) {
   if (err) throw err;

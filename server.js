@@ -3,14 +3,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const cors = require('cors')
+
 // criamos o app express
 const app = express();
+app.use(cors())
 
 // setamos a porta que o aplicativo vai ser hospedado
 const port = process.env.PORT || 5000;
 
 // automaticamente seta o aplicativo para parsear requisições application/x-www-form-urlencoded
-//app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // automaticamente seta o aplicativo para parsear requisições- application/json
 app.use(bodyParser.json())

@@ -15,6 +15,7 @@ exports.findAll = function (req, res) {
 exports.create = function (req, res) {
     const novo_aluno = new Aluno(req.body);
     //Lida com corpo da requisição nula
+    console.log(req.body);
     if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
         res.status(400).send({
             error: true,
